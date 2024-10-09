@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="testNG" verbose="1">
+    <!--    <parameter name="environment" value="live"/>-->
+    <listeners>
+        <listener class-name="listeners.ScreenshotListener"/>
+    </listeners>
+
+    <test name="selenium firefox">
+        <!--        <parameter name="browser" value="firefox"/>-->
+        <classes>
+            <class name="testng.Topic16_Dependences"/>
+        </classes>
+    </test>
+</suite>
